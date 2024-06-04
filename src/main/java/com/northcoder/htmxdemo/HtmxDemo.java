@@ -29,8 +29,7 @@ public class HtmxDemo {
         // Thymeleaf fragment rendering (uses HTMX Ajax):
         final ThymeleafFragmentHandler frag = new ThymeleafFragmentHandler(te);
         get("/message_one", frag::renderMessageOne);
-        //get("/message_two", frag::renderMessageTwo);
-        get("/message_two", msgTwo);
+        get("/message_two", frag::renderMessageTwo);
         get("/all_messages", frag::renderAllMessages);
     }
     
@@ -39,12 +38,6 @@ public class HtmxDemo {
         model.put("mainTitle", "HTMX with Fragments");
         model.put("name", "John");
         ctx.render("demo", model);
-    };
-
-    private static final Handler msgTwo = ctx -> {
-        Map<String, Object> model = new HashMap<>();
-        model.put("msg2", 789);
-        ctx.render("~{messages::msg_two}", model);
     };
 
 }
