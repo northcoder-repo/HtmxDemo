@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title th:text="${mainTitle}"></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/htmx.org@1.9.12" 
+                integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" 
+                crossorigin="anonymous">
+        </script>
+    </head>
+
+    <body>
+        
+        <h1>I ❤️ HTMX</h1>
+        
+        <div id="greet" th:text="|Hello ${name}|">
+        </div>
+
+        <br/>
+        
+        <div hx-get="/message_one">
+            Click here for message one.
+        </div>
+
+        <br/>
+        
+        <div hx-get="/message_two">
+            Click here for message two.
+        </div>
+        <br/>
+        
+        <div hx-get="/all_messages">
+            Click here for all messages.
+        </div>
+    </body>
+
+</html>
