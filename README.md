@@ -1,4 +1,4 @@
-# HtmxDemo
+# HTMX Demo
  
 A simple demo showing how HTMX (with its suport for Ajax-in-HTML) can be integrated with Javalin and Thymeleaf.
 
