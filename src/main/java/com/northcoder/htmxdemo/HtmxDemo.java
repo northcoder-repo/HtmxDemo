@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 import org.thymeleaf.TemplateEngine;
 
-// see also https://anthonybruno.dev/2023/06/11/full-stack-development-in-a-single-java-file/
 public class HtmxDemo {
 
     public static void main(String[] args) {
