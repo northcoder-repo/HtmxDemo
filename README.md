@@ -4,4 +4,4 @@ A simple demo showing how HTMX (with its suport for Ajax-in-HTML) can be integra
 
 Specifically, this focuses on how Thymeleaf fragments can be used to provide HTML responses to Ajax requests, without needing to create a separate Thymeleaf template file per fragment. Instead, multiple fragments can be placed in a single Thymeleaf template file.
 
-See [Using Thymeleaf Fragments with HTMX]() for more notes.
+See [Using Thymeleaf Fragments with HTMX](https://northcoder.com/post/using-thymeleaf-fragments-with-htmx/) for more notes.
